@@ -1,0 +1,139 @@
+<html>
+    <section>
+      <div class="outside">
+        <div class="inside">
+          <div>
+            <input id="aaaa" type="checkbox" value="AAAA" />
+            <label for="aaaa">Recorded Line</label>
+            </div><br/>
+          <div>
+            <input id="bbbb" type="checkbox" value="BBBB" />
+            <label for="bbbb">Authorization Email</label>
+          </div><br/>
+          <div>
+            <input id="cccc" type="checkbox" value="CCCC" />
+            <label for="cccc"> Website Backup</label>
+          </div><br/>
+          <div>
+            <input id="dddd" type="checkbox" value="DDDD" />
+            <label for="dddd">GCSS Pitch</label>
+          </div>
+         </div>
+      </div>
+ </section>
+</html>
+
+      Pre - Call Check
+      On call implementation (includes 1st call, follow ups, reschedules)
+      Case Documentation
+      Off Call SME/ Tech Assistance
+      Email communication with Advertiser/Other stakeholders
+      Sharing updates with seller (email / chat / call)
+      7th Day check 
+      Post 7th day check follow up process
+
+<!-- {
+  "Analytics":"we will help you implement Google Analytics on your website. This will help analyze in depth details about the visitors on your website." ,
+  "Analytics Event Tracking":"we will help you implement Google Analytics Event tracking, which is a useful feature to record specific interactions on your website." ,
+  "Google Analytics Remarketing":"we will help you implement Google Analytics remarketing, which will help you re-target the past visitors of your website by showing relevant ads." ,
+  "Analytics Destination Tracking":" we will help you implement Google Analytics Destination tracking, which is a useful feature that allows you to track the specific pages visited on your website." ,
+  "GA Smart Goals":"we will help you import 'Smart goal' from Google Analytics. This is useful to track conversions depending on the historical data of the user interaction on your website." ,
+  "Cross Domain Tracking":"we will help you implement cross domain code on multiple domains. It will help in passing the cookie from the primary domain to the secondary domain resulting in unifying multiple sessions and providing the correct source-attribution. " ,
+  "Analytics E-Commerce Tracking":"we will help you setup ecommerce tracking, which will help you understand the sales made and the revenue generated on the website from all traffic sources. " ,
+  "Analytics Enhanced E-Commerce Tracking":"we will help you setup enhanced ecommerce, which will help you get better insights on Shopping and 'Checkout behaviour' of the users. You will also get access to reports such as purchases, checkout steps and product performance." ,
+  "Google Analytics Dynamic Remarketing (Non-Retail)":"we will help you setup Google Ads Dynamic remarketing, with the help of which, you can retarget the past visitors specific to the interactions they have had in your website. This will help you to aim at better conversions." ,
+  "Google Analytics Dynamic Remarketing (Retail)":"we will help you setup Google ads dynamic remarketing, which will enable you to retarget the past visitors based on the interaction they have had with the products on your website. This will help you to aim at better conversions." ,
+  "Google Analytics Health Check":"we will check if Analytics and analytics based codes are implemented correctly, which will help you understand the user behaviour and other important conversions on Analytics." ,
+  "Adwords Conversion Code":"we will help you implement Google Ads Conversion code on your website, which will provide insights into the performance of campaigns, ad groups, ads and keywords on your Google Ads account." ,
+  "Adwords Event Tracking":"we will help you implement Ads conversion code at the backend of your website, which will provide insights regarding campaigns, ad groups and keywords that contribute more business to your Ads account." ,
+  "Adwords Remarketing":"we will help you implement Ads remarketing code at the backend of your website. Post this, you can retarget the past visitors to aim at better conversion." ,
+  "Website Call Conversion":"we will help you implement 'Website Call Conversion Code' at the backend of your website. This will help you see the number of people who have reached you over the phone by clicking on an ad. You will also be able to see which campaign, ad group and keywords are bringing in more business to your Ads account." ,
+  "Dynamic Remarketing - X (Non-Retail)":"we will help you setup Ads dynamic remarketing. With this, you can retarget the past visitors on your website with product/service specific ads to aim at better conversion." ,
+  "Dynamic Remarketing - Retail":"we will help you setup Ads dynamic remarketing. This will enable you to retarget the past visitors on your website with product specific ads to aim at better conversion." ,
+  "Site Wide Tag - Conversion Tracking Fix":"we will help you replace the old conversion code (legacy code) with a new version of 'Ads conversion code', which will help you in tracking data accurately on browsers enabled with Intelligent tracking prevention." ,
+  "Google Tag Manager Installation":"we will help you set up Google Tag Manager - a Tag Integration system that will help you add and manage all your codes. With successful implementation of GTM, you will be able to manage all of your tags efficiently." ,
+  "Offline Conversion Tracking":"we will help you implement Offline conversion tracking. Offline conversion tracking will help you track an ad-click leading to a sale in the offline world - which is achieved by capturing the lead information either through a form submission or a phone call." 
+} -->
+
+<option value="Analytics">Analytics</option>
+<option value="Adwords Conversion Code">Ads Conversion Code</option>
+<option value="AdWords Conversion Tracking Troubleshooting">Ads Conversion Tracking Troubleshooting</option>
+<option value="Analytics E-Commerce Tracking">Analytics E-Commerce Tracking</option>
+<option value="Analytics Enhanced E-Commerce Tracking">Analytics Enhanced E-Commerce Tracking</option>
+<option value="Adwords Event Tracking">Ads Event Tracking</option>
+<option value="Adwords Remarketing">Ads Remarketing</option>
+<option value="Analytics Destination Tracking">Analytics Destination Tracking</option>
+<option value="Analytics Event Tracking">Analytics Event Tracking</option>
+<option value="Cross Domain Tracking">Cross Domain Tracking</option>
+<option value="Dynamic Remarketing - Retail">Dynamic Remarketing - Retail</option>
+<option value="Dynamic Remarketing - X (Non-Retail)">Dynamic Remarketing - (Non-Retail)</option>
+<option value="GA Smart Goals">GA Smart Goals</option>
+<option value="Google Analytics Dynamic Remarketing (Non-Retail)">Google Analytics Dynamic Remarketing (Non-Retail)</option>
+<option value="Google Analytics Dynamic Remarketing (Retail)">Google Analytics Dynamic Remarketing (Retail)</option>
+<option value="Google Analytics Troubleshooting">Google Analytics Troubleshooting</option>
+<option value="Google Analytics Remarketing">Google Analytics Remarketing</option>
+<option value="Google Tag Manager Installation">Google Tag Manager Installation</option>
+<option value="Website Call Conversion">Website Call Conversion</option>
+<option value="Google Analytics Health Check">Google Analytics Health Check</option>
+<option value="Site Wide Tag - Conversion Tracking Fix">Site Wide Tag - Conversion Tracking Fix</option>
+<option value="Offline conversion import">Offline conversion import</option>
+<option value="Offline Conversion Tracking">Offline Conversion Tracking</option>
+
+
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 1.25em; height: 1.25em;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: .2em; left: .175em;
+  font-size: 1.4em;
+  line-height: 0.8;
+  color: #09ad7e;
+  transition: all .2s;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 2px dotted green;
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 2px solid green!important;
+}

@@ -1,0 +1,11 @@
+.swal2-title {
+    color: darkblue !important;
+}
+
+.swal-footer {
+    text-align: center !important;
+}
+.swal-button {
+    background: none !important;
+    background-color: #4962B3 !important;
+}
