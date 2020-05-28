@@ -36,6 +36,7 @@
 			"js/sweetalert2.all.js",
 			"js/popper.min.js",
 			"js/jquery.cookie.js",
+			"js/jTimer.js",
 			"tt.js",
 			"js/platform.js",
 			"js/jquery.gritter.min.js",

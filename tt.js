@@ -365,56 +365,62 @@ function DashStats(){
   <div class="row dashboard-card">
     <div class="col">
       <div class="collapse" id="prechecks">
-        <div class="card dashboard-card-content bg-secondary border-0" style="width: 33rem;">
+        <div class="card dashboard-card-content bg-secondary border-0" style="width: 38rem;">
           <div class=" card-body">
               <div class="row p-2 border-bottom">
                 <div class="col-lg-6 text-white">Pre - Call Check</div>
-                <div class="col-lg-2 text-center"> <button type="button" class="timer_pre btn btn-success">Start</button> </div>
-                <div class="col-lg-2 text-center"> <button type="button" class="btn btn-danger">Stop</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_pre btn btn-success">Start</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn  text-dark btn btn-danger">Stop</button> </div>
                 <div class="col-lg-2 text-center mx-auto" id="timer_pre"> <h3 class="text-white"> 00:00:00 </h3> </div>
               </div>
               <div class="row p-2 border-bottom">
                 <div class="col-lg-6 text-white">On call implementation (includes 1st call, follow ups, reschedules)</div>
-                <div class="col-lg-2 text-center"> <button type="button" class="timer_oncall btn btn-success">Start</button> </div>
-                <div class="col-lg-2 text-center"> <button type="button" class="btn btn-danger">Stop</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_oncall btn btn-success">Start</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn  text-dark btn btn-danger">Stop</button> </div>
                 <div class="col-lg-2 text-center mx-auto" id="timer_oncall"> <h3 class="text-white"> 00:00:00 </h3> </div>
               </div>
               <div class="row p-2 border-bottom">
                 <div class="col-lg-6 text-white">Case Documentation</div>
-                <div class="col-lg-2 text-center"> <button type="button" class="timer_case btn btn-success">Start</button> </div>
-                <div class="col-lg-2 text-center"> <button type="button" class="btn btn-danger">Stop</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_case btn btn-success">Start</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn  text-dark btn btn-danger">Stop</button> </div>
                 <div class="col-lg-2 text-center mx-auto" id="timer_case"> <h3 class="text-white"> 00:00:00 </h3> </div>
               </div>
               <div class="row p-2 border-bottom">
                 <div class="col-lg-6 text-white">Off Call SME/ Tech Assistance</div>
-                <div class="col-lg-2 text-center"> <button type="button" class="timer_offcall btn btn-success">Start</button> </div>
-                <div class="col-lg-2 text-center"> <button type="button" class="btn btn-danger">Stop</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_offcall btn btn-success">Start</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn  text-dark btn btn-danger">Stop</button> </div>
                 <div class="col-lg-2 text-center mx-auto" id="timer_offcall"> <h3 class="text-white"> 00:00:00 </h3> </div>
               </div>
               <div class="row p-2 border-bottom">
                 <div class="col-lg-6 text-white">Email communication with Advertiser/Other stakeholders</div>
-                <div class="col-lg-2 text-center"> <button type="button" class="timer_email btn btn-success">Start</button> </div>
-                <div class="col-lg-2 text-center"> <button type="button" class="btn btn-danger">Stop</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_email btn btn-success">Start</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn  text-dark btn btn-danger">Stop</button> </div>
                 <div class="col-lg-2 text-center mx-auto" id="timer_email"> <h3 class="text-white"> 00:00:00 </h3> </div>
               </div>
               <div class="row p-2 border-bottom">
                 <div class="col-lg-6 text-white">Sharing updates with seller (email / chat / call)</div>
-                <div class="col-lg-2 text-center"> <button type="button" class="timer_sharing btn btn-success">Start</button> </div>
-                <div class="col-lg-2 text-center"> <button type="button" class="btn btn-danger">Stop</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_sharing btn btn-success">Start</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn  text-dark btn btn-danger">Stop</button> </div>
                 <div class="col-lg-2 text-center mx-auto" id="timer_sharing"> <h3 class="text-white"> 00:00:00 </h3> </div>
               </div>
               <div class="row p-2 border-bottom">
                 <div class="col-lg-6 text-white">7th Day check </div>
-                <div class="col-lg-2 text-center"> <button type="button" class="timer_7days btn btn-success">Start</button> </div>
-                <div class="col-lg-2 text-center"> <button type="button" class="btn btn-danger">Stop</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_7days btn btn-success">Start</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn text-dark btn btn-danger">Stop</button> </div>
                 <div class="col-lg-2 text-center mx-auto" id="timer_7days"> <h3 class="text-white"> 00:00:00 </h3> </div>
               </div>
               <div class="row p-2 border-bottom">
                 <div class="col-lg-6 text-white">Post 7th day check follow up process</div>
-                <div class="col-lg-2 text-center"> <button type="button" class="timer_followup btn btn-success">Start</button> </div>
-                <div class="col-lg-2 text-center"> <button type="button" class="btn btn-danger">Stop</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_followup btn btn-success">Start</button> </div>
+                <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn text-dark btn btn-danger">Stop</button> </div>
                 <div class="col-lg-2 text-center mx-auto" id="timer_followup"> <h3 class="text-white"> 00:00:00 </h3> </div>
               </div>
+              <div class="row p-2 border-bottom">
+              <div class="col-lg-6 text-white">TOTAL</div>
+              <div class="col-lg-2 text-center">  </div>
+              <div class="col-lg-2 text-center">  </div>
+              <div class="col-lg-2 text-center mx-auto" id="timer_total"> <h3 class="text-success"> 00:00:00 </h3> </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1514,6 +1520,17 @@ window.addEventListener('load', function(){
           } else {
             launcher();
           }
+
+          $('.starter_btn').click(function(){
+            $(this).parents('.row:first').find('h3').stopwatch({format: '{Minutes} and {s.}'}).stopwatch('start')
+            $(this).attr('disabled','disabled')
+            $(this).parents('.row:first').find('.stoper_btn').removeAttr('disabled')
+          })
+          $('.stoper_btn').click(function(){
+            $(this).parents('.row:first').find('h3').stopwatch().stopwatch('stop')
+            $(this).attr('disabled','disabled')
+            $(this).parents('.row:first').find('.starter_btn').removeAttr('disabled')
+          })
 
         })
     }
