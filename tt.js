@@ -215,7 +215,7 @@ function warning(){
               button: {
                 text: "Got it!",
               },
-          })  
+            })  
           }
         }
     }
@@ -365,61 +365,61 @@ function DashStats(){
   <div class="row dashboard-card">
     <div class="col">
       <div class="collapse" id="prechecks">
-        <div class="card dashboard-card-content bg-secondary border-0" style="width: 38rem;">
+        <div class="card dashboard-card-content bg-transparent border-0" style="width: 38rem;background-color: #f0f8ffd6 !important;">
           <div class=" card-body">
               <div class="row p-2 border-bottom">
-                <div class="col-lg-6 text-white">Pre - Call Check</div>
+                <div class="col-lg-6 text-dark">Pre - Call Check</div>
                 <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_pre btn btn-success">Start</button> </div>
                 <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn  text-dark btn btn-danger">Stop</button> </div>
-                <div class="col-lg-2 text-center mx-auto" id="timer_pre"> <h3 class="text-white"> 00:00:00 </h3> </div>
+                <div class="col-lg-2 text-center mx-auto" id="timer_pre"> <h3 class="text-dark"> 00:00:00 </h3> </div>
               </div>
               <div class="row p-2 border-bottom">
-                <div class="col-lg-6 text-white">On call implementation (includes 1st call, follow ups, reschedules)</div>
+                <div class="col-lg-6 text-dark">On call implementation (includes 1st call, follow ups, reschedules)</div>
                 <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_oncall btn btn-success">Start</button> </div>
                 <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn  text-dark btn btn-danger">Stop</button> </div>
-                <div class="col-lg-2 text-center mx-auto" id="timer_oncall"> <h3 class="text-white"> 00:00:00 </h3> </div>
+                <div class="col-lg-2 text-center mx-auto" id="timer_oncall"> <h3 class="text-dark"> 00:00:00 </h3> </div>
               </div>
               <div class="row p-2 border-bottom">
-                <div class="col-lg-6 text-white">Case Documentation</div>
+                <div class="col-lg-6 text-dark">Case Documentation</div>
                 <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_case btn btn-success">Start</button> </div>
                 <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn  text-dark btn btn-danger">Stop</button> </div>
-                <div class="col-lg-2 text-center mx-auto" id="timer_case"> <h3 class="text-white"> 00:00:00 </h3> </div>
+                <div class="col-lg-2 text-center mx-auto" id="timer_case"> <h3 class="text-dark"> 00:00:00 </h3> </div>
               </div>
               <div class="row p-2 border-bottom">
-                <div class="col-lg-6 text-white">Off Call SME/ Tech Assistance</div>
+                <div class="col-lg-6 text-dark">Off Call SME/ Tech Assistance</div>
                 <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_offcall btn btn-success">Start</button> </div>
                 <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn  text-dark btn btn-danger">Stop</button> </div>
-                <div class="col-lg-2 text-center mx-auto" id="timer_offcall"> <h3 class="text-white"> 00:00:00 </h3> </div>
+                <div class="col-lg-2 text-center mx-auto" id="timer_offcall"> <h3 class="text-dark"> 00:00:00 </h3> </div>
               </div>
               <div class="row p-2 border-bottom">
-                <div class="col-lg-6 text-white">Email communication with Advertiser/Other stakeholders</div>
+                <div class="col-lg-6 text-dark">Email communication with Advertiser/Other stakeholders</div>
                 <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_email btn btn-success">Start</button> </div>
                 <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn  text-dark btn btn-danger">Stop</button> </div>
-                <div class="col-lg-2 text-center mx-auto" id="timer_email"> <h3 class="text-white"> 00:00:00 </h3> </div>
+                <div class="col-lg-2 text-center mx-auto" id="timer_email"> <h3 class="text-dark"> 00:00:00 </h3> </div>
               </div>
               <div class="row p-2 border-bottom">
-                <div class="col-lg-6 text-white">Sharing updates with seller (email / chat / call)</div>
+                <div class="col-lg-6 text-dark">Sharing updates with seller (email / chat / call)</div>
                 <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_sharing btn btn-success">Start</button> </div>
                 <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn  text-dark btn btn-danger">Stop</button> </div>
-                <div class="col-lg-2 text-center mx-auto" id="timer_sharing"> <h3 class="text-white"> 00:00:00 </h3> </div>
+                <div class="col-lg-2 text-center mx-auto" id="timer_sharing"> <h3 class="text-dark"> 00:00:00 </h3> </div>
               </div>
               <div class="row p-2 border-bottom">
-                <div class="col-lg-6 text-white">7th Day check </div>
+                <div class="col-lg-6 text-dark">7th Day check </div>
                 <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_7days btn btn-success">Start</button> </div>
                 <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn text-dark btn btn-danger">Stop</button> </div>
-                <div class="col-lg-2 text-center mx-auto" id="timer_7days"> <h3 class="text-white"> 00:00:00 </h3> </div>
+                <div class="col-lg-2 text-center mx-auto" id="timer_7days"> <h3 class="text-dark"> 00:00:00 </h3> </div>
               </div>
               <div class="row p-2 border-bottom">
-                <div class="col-lg-6 text-white">Post 7th day check follow up process</div>
+                <div class="col-lg-6 text-dark">Post 7th day check follow up process</div>
                 <div class="col-lg-2 text-center"> <button type="button" class=" starter_btn text-dark timer_followup btn btn-success">Start</button> </div>
                 <div class="col-lg-2 text-center"> <button type="button" disabled class="stoper_btn text-dark btn btn-danger">Stop</button> </div>
-                <div class="col-lg-2 text-center mx-auto" id="timer_followup"> <h3 class="text-white"> 00:00:00 </h3> </div>
+                <div class="col-lg-2 text-center mx-auto" id="timer_followup"> <h3 class="text-dark"> 00:00:00 </h3> </div>
               </div>
               <div class="row p-2 border-bottom">
-              <div class="col-lg-6 text-white">TOTAL</div>
+              <div class="col-lg-6 text-dark">TOTAL</div>
               <div class="col-lg-2 text-center">  </div>
               <div class="col-lg-2 text-center">  </div>
-              <div class="col-lg-2 text-center mx-auto" id="timer_total"> <h3 class="text-success"> 00:00:00 </h3> </div>
+              <div class="col-lg-2 text-center mx-auto" id="timer_total"> <h3 class="text-success timer_total"> 00:00:00 </h3> </div>
             </div>
           </div>
         </div>
@@ -1498,6 +1498,43 @@ function tzConversion(a){
   return day;
 }
 
+function addTimes (startTime, endTime) {
+  var times = [ 0, 0, 0 ]
+  var max = times.length
+
+  var a = (startTime || '').split(':')
+  var b = (endTime || '').split(':')
+
+  // normalize time values
+  for (var i = 0; i < max; i++) {
+    a[i] = isNaN(parseInt(a[i])) ? 0 : parseInt(a[i])
+    b[i] = isNaN(parseInt(b[i])) ? 0 : parseInt(b[i])
+  }
+
+  // store time values
+  for (var i = 0; i < max; i++) {
+    times[i] = a[i] + b[i]
+  }
+
+  var hours = times[0]
+  var minutes = times[1]
+  var seconds = times[2]
+
+  if (seconds >= 60) {
+    var m = (seconds / 60) << 0
+    minutes += m
+    seconds -= 60 * m
+  }
+
+  if (minutes >= 60) {
+    var h = (minutes / 60) << 0
+    hours += h
+    minutes -= 60 * h
+  }
+
+  return ('0' + hours).slice(-2) + ':' + ('0' + minutes).slice(-2) + ':' + ('0' + seconds).slice(-2)
+}
+
 
 window.addEventListener('load', function(){
     
@@ -1521,15 +1558,78 @@ window.addEventListener('load', function(){
             launcher();
           }
 
+          $.ajax({
+            url: "https://google-wfm.regalix.com/salesforcetool/fetchMessage.php",
+            data: {
+              qtype: 'timerRetrieve',
+              case_id : $('.pageDescription').text().trim(),
+            },
+            success: function(result) {
+              var element = JSON.parse(result);
+              $('#timer_pre h3').text(element[0]['precheck']),
+              $('#timer_oncall h3').text(element[0]['oncall_imp']),
+              $('#timer_case h3').text(element[0]['case_documentation']),
+              $('#timer_offcall h3').text(element[0]['tech_assis']),
+              $('#timer_email h3').text(element[0]['email_com']),
+              $('#timer_sharing h3').text(element[0]['update_sharing']),
+              $('#timer_7days h3').text(element[0]['days_check']),
+              $('#timer_followup h3').text(element[0]['follow_up']),
+              $('#timer_total h3').text(element[0]['timetotal'])
+
+              console.log(element, element[0]['precheck']);
+            }
+            
+          });
+
           $('.starter_btn').click(function(){
-            $(this).parents('.row:first').find('h3').stopwatch({format: '{Minutes} and {s.}'}).stopwatch('start')
-            $(this).attr('disabled','disabled')
-            $(this).parents('.row:first').find('.stoper_btn').removeAttr('disabled')
+            $(this).parents('.row:first').find('h3').stopwatch({format: '{Minutes} and {s.}'}).stopwatch('start');
+            $(this).attr('disabled','disabled');
+            // console.log('asdasdas');
+            $(this).parents('.row:first').find('.stoper_btn').removeAttr('disabled');
+            $('#InlineEditDialog_buttons input:first').attr('disabled', 'disabled')
           })
           $('.stoper_btn').click(function(){
-            $(this).parents('.row:first').find('h3').stopwatch().stopwatch('stop')
-            $(this).attr('disabled','disabled')
-            $(this).parents('.row:first').find('.starter_btn').removeAttr('disabled')
+            $(this).parents('.row:first').find('h3').stopwatch().stopwatch('stop');
+            $(this).attr('disabled','disabled');
+            // console.log('qqwqwqw');
+            $(this).parents('.row:first').find('.starter_btn').removeAttr('disabled');
+
+            if($('.stoper_btn').length == 8){
+              $('#InlineEditDialog_buttons input:first').removeAttr('disabled')
+            }
+           
+
+              time1 = addTimes($('#timer_pre').text(),$('#timer_oncall').text() )
+              time2 = addTimes($('#timer_case').text(),$('#timer_offcall').text())
+              time3 = addTimes($('#timer_email').text(), $('#timer_sharing').text())
+              time4 = addTimes($('#timer_7days').text(),$('#timer_followup').text())
+              
+              time5 = addTimes(time1,time2)
+              time6 = addTimes(time3,time4)
+
+              timetotal = addTimes(time5,time6)
+              $('.timer_total').text(timetotal);
+
+              $.ajax({
+                url: "https://google-wfm.regalix.com/salesforcetool/fetchMessage.php",
+                data: {
+                  qtype: 'timer',
+                  case_id : $('.pageDescription').text().trim(),
+                  timer_pre: $('#timer_pre').text().trim(),
+                  timer_oncall: $('#timer_oncall').text().trim(),
+                  timer_case: $('#timer_case').text().trim(),
+                  timer_offcall: $('#timer_offcall').text().trim(),
+                  timer_email: $('#timer_email').text().trim(),
+                  timer_sharing: $('#timer_sharing').text().trim(),
+                  timer_7days: $('#timer_7days').text().trim(),
+                  timer_followup: $('#timer_followup').text().trim(),
+                  timetotal: timetotal
+                },
+                success: function(result) {
+                  console.log(result)
+                }
+                
+              });
           })
 
         })
