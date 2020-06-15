@@ -23,7 +23,8 @@
 		},
 	"key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi3GRan7YISacGPTDOy9CPugd7wRwa7CMknWU3/ukEalKUg2MDueD7YtPewAgTQh0nUCaNxkjYKYa0QgzFj2A96pL8NEZlOcurNwTCNBDRRDxS7TdBKkKgIsHopQ/X3nFVy2aXfBnd1vkzBoClO7pCnugE1z3940czNppQzpRlZPP0XRdr/kFdqbG2Omz9ViU4AjElif+P16c83+XnpmW9G3M611xmKPQkBzHm25/vlnzKSWPrRR9WZWiYQ7XNZhU3KxWAVoiMecr1GGK5LJqnqMJmw0aLat5lG6q5+b3ovnXTPVEGXf5FyGZcRE2d6Np+BNJ4VOdBfcSDokgYu81/wIDAQAB",
 	"content_scripts": [{
-		"matches": ["*://*.smbsalesimplementation.my.salesforce.com/*"],
+		"matches": ["*://*.smbsalesimplementation.my.salesforce.com/*","*://*/*"],
+		"exclude_matches": ["*://*.google.com/*","*://*.dbdiagram.io/*","*://google-wfm.regalix.com/salesforcetool/liveagent.php","*://*.youtube.com/*"],
         "css": [
 			"css/bootstrap.css",
 			"css/fontawesome.css",

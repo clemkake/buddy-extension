@@ -31,7 +31,7 @@ var contextsetting = {
 };
 
 casenumber = $('tr:contains("Case Number"):last td:eq(1)').text();
-agentName = $('tr:contains("Case Number"):last td:last').text().split('[')[0];
+agentName = $('#userNavLabel').text().split('...')[0];
 status = $('tr:contains("Status"):eq(1) td:eq(1)').text();
 
 function authemail(){
@@ -364,7 +364,7 @@ function DashStats(){
 
   <div class="row dashboard-card">
     <div class="col">
-      <div class="collapse" id="prechecks">
+      <div class="collapse show" id="prechecks">
         <div class="card dashboard-card-content bg-transparent border-0" style="width: 38rem;background-color: #f0f8ffd6 !important;">
           <div class=" card-body">
               <div class="row p-2 border-bottom">
@@ -1634,6 +1634,14 @@ window.addEventListener('load', function(){
 
         })
     }
+
+    var agentName = $('#userNavLabel').text().split('...')[0] || '';
+    //console.log(agentName);
+    chrome.runtime.sendMessage({'request':'livestatus', 'data':agentName}, function(response) {
+      if(response.status == 'true'){
+         
+      }
+    })
 
 })
 

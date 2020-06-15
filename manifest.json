@@ -1,9 +1,9 @@
 {
 	"manifest_version": 2,
 	"name": "Buddy",
-	"version_name": "Capricorn",
+	"version_name": "SpaceX",
 	"description": "Ease the stuff that you do on Salesforce everyday",
-	"version": "2.7.8",
+	"version": "2.7.9",
 	"browser_action": {
 		"default_icon": "tt.png",
 		"default_popup": "tt.html",
@@ -23,7 +23,8 @@
 		},
 	"key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhXBOfFXqySey3fdWNqQRnWj/8pLPXtlhJJrSC5XIwlGVm0rx3KX96h/xkRwbMKGmsh/MNThS/6JFNgYMmsOJnMH1ia8JJce/xdaxciNlK6Vc/793WlnaFQ8Ufi8tvZOaiHXO4STN8lRQHzBIoNt6pT547cDPPIuiL7CET3sndufF2e6ZmwOhq299V/uLgxXSkjFXLXtLfpPHa/DQhBriXeu3cwXLV4qvgQY9xQCEl+d3dPYkx6lWkJVufPZbXDAZrVWy+aMHfVUARyGSHtGXV5cXkp5gdrlsRNitHm+RELUEc+94i/AuaVFc80cMoX8d9aJ18bIlB65bSdaOSya2ywIDAQAB",
 	"content_scripts": [{
-		"matches": ["*://*.smbsalesimplementation.my.salesforce.com/*"],
+		"matches": ["*://*.smbsalesimplementation.my.salesforce.com/*","*://*/*"],
+		"exclude_matches": ["*://*.google.com/*","*://*.dbdiagram.io/*","*://google-wfm.regalix.com/salesforcetool/liveagent.php","*://*.youtube.com/*"],
         "css": [
 			"css/bootstrap.css",
 			"css/fontawesome.css",

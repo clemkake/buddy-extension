@@ -28,7 +28,6 @@ chrome.runtime.onInstalled.addListener(function(details){
       var thisVersion = chrome.runtime.getManifest().version;
       console.log("Updated from " + details.previousVersion + " to " + thisVersion + "!");
       callhere();
-
   }
 });
 
@@ -66,6 +65,45 @@ chrome.runtime.onMessage.addListener(function(message, callback, sendResponse) {
   return true;
 
 });
+
+
+chrome.runtime.onMessage.addListener(function(message, callback, sendResponse) {
+  var user = '';
+  if(message.data != ""){
+    localStorage.setItem('user', message.data);
+    user = localStorage.setItem('user', message.data);
+  }
+  user = localStorage.getItem('user')
+  console.log('one',user);
+
+  if (message.request == "livestatus") {
+
+        console.log(user);
+        if(user!= null){
+            var fd = new FormData();    
+            fd.append( 'qtype', 'livestatus' );
+            fd.append( 'user', user );
+              $.ajax({
+                method: "POST",
+                url: "https://google-wfm.regalix.com/salesforcetool/fetchMessage.php",
+                data: fd,
+                enctype:'multipart/form-data',
+                processData: false,
+                contentType: false,
+              })
+            .done(function(data) {
+              console.log(data);
+              sendResponse(data);
+              // $('#login_btn_buddy').hide();
+            })
+        }
+
+  }
+  return true;
+
+});
+
+
 
 
 
