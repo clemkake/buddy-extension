@@ -32,7 +32,7 @@ var contextsetting = {
 
 casenumber = $('tr:contains("Case Number"):last td:eq(1)').text();
 agentName = $('#userNavLabel').text().split('...')[0];
-status = $('tr:contains("Status"):eq(1) td:eq(1)').text();
+status = $('tr:contains("Status"):eq(3) td:eq(1)').text();
 
 function authemail(){
   open('http://tagteamtools.regalix.com/authemail.html?cid=' + encodeURIComponent(document.querySelector('[id="00N3600000QIS9M_ileinner"]').innerText.split("g")[0].trim()) + '&grep=' + encodeURIComponent(document.querySelector('[id="00N3600000QISAD_ileinner"]').innerText) + '&name=' + encodeURIComponent(document.querySelector('[id="cas3_ileinner"]').innerText) + '&time=' + encodeURIComponent(document.querySelector('[id="00N3600000QIS8F_ileinner"]').innerText) + '&timezone=' + encodeURIComponent(document.querySelector('[id="00N3600000QISAa_ileinner"]').innerText) + '&url=' + encodeURIComponent(document.querySelector('td.dataCell').innerText) + '&codetype=' + encodeURIComponent(document.querySelector('th.dataCell').innerText) + '&grepemail=' + encodeURIComponent(document.querySelector('[id="00N3600000QISAq_ileinner"]').innerText) + '&status=' + encodeURIComponent(document.querySelector('[id="00N3600000QISAX_ileinner"]').innerText) + '&subject=' + encodeURIComponent(document.querySelector('[id*=cas14_ileinner]').innerText) + '&aname=' + encodeURIComponent(document.querySelector('[id="cas1_ileinner"]').innerText) + '&lang=' + encodeURIComponent(document.querySelector('[id="00N3600000QISBE_ileinner"]').innerText), '_blank', 'width=1100,height=1100,scrollbars=no')
@@ -364,7 +364,7 @@ function DashStats(){
 
   <div class="row dashboard-card">
     <div class="col">
-      <div class="collapse show" id="prechecks">
+      <div class="collapse" id="prechecks">
         <div class="card dashboard-card-content bg-transparent border-0" style="width: 38rem;background-color: #f0f8ffd6 !important;">
           <div class=" card-body">
               <div class="row p-2 border-bottom">
@@ -451,8 +451,8 @@ function DashStats(){
                   <div class="col-lg-6 text-white">Auth mail sent</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_pre"> 
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                      <label class="custom-control-label" for="customSwitch1"></label>
+                      <input type="checkbox" class="custom-control-input"  id="auth_mail_sent">
+                      <label class="custom-control-label" for="auth_mail_sent"></label>
                     </div>
                   </div>
                 </div>
@@ -460,8 +460,8 @@ function DashStats(){
                   <div class="col-lg-6 text-white">Appointment Confirmed</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_oncall"> 
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                      <label class="custom-control-label" for="customSwitch2"></label>
+                      <input type="checkbox" class="custom-control-input"  id="appointment_confirmed">
+                      <label class="custom-control-label" for="appointment_confirmed"></label>
                     </div>
                   </div>
                 </div>
@@ -469,8 +469,8 @@ function DashStats(){
                   <div class="col-lg-6 text-white">Correct phone number updated</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_case"> 
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch3">
-                      <label class="custom-control-label" for="customSwitch3"></label>
+                      <input type="checkbox" class="custom-control-input"  id="correct_phone_number">
+                      <label class="custom-control-label" for="correct_phone_number"></label>
                     </div>
                   </div>
                 </div>
@@ -478,8 +478,8 @@ function DashStats(){
                   <div class="col-lg-6 text-white">Hangout link sent</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_offcall"> 
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch4">
-                      <label class="custom-control-label" for="customSwitch4"></label>
+                      <input type="checkbox" class="custom-control-input"  id="hangout_link">
+                      <label class="custom-control-label" for="hangout_link"></label>
                     </div>
                   </div>
                 </div>
@@ -487,8 +487,8 @@ function DashStats(){
                   <div class="col-lg-6 text-white">Has googler asked to join</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_email"> 
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch5">
-                      <label class="custom-control-label" for="customSwitch5"></label>
+                      <input type="checkbox" class="custom-control-input"  id="has_googler_join">
+                      <label class="custom-control-label" for="has_googler_join"></label>
                     </div>
                   </div>
                 </div>
@@ -496,8 +496,8 @@ function DashStats(){
                   <div class="col-lg-6 text-white">All tasks added on the case, Special Instructions or on emails addressed</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_sharing"> 
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch6">
-                      <label class="custom-control-label" for="customSwitch6"></label>
+                      <input type="checkbox" class="custom-control-input"  id="all_tasks_added_precheck">
+                      <label class="custom-control-label" for="all_tasks_added_precheck"></label>
                     </div>
                   </div>
                 </div>
@@ -505,8 +505,8 @@ function DashStats(){
                   <div class="col-lg-6 text-white">Has agent joined & started the call?</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_7days"> 
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch7">
-                      <label class="custom-control-label" for="customSwitch7"></label>
+                      <input type="checkbox" class="custom-control-input"  id="has_agent_joined">
+                      <label class="custom-control-label" for="has_agent_joined"></label>
                     </div>
                   </div>
                 </div>
@@ -524,8 +524,8 @@ function DashStats(){
                   <div class="col-lg-6 text-white">Comments updated</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_pre"> 
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch8">
-                      <label class="custom-control-label" for="customSwitch8"></label>
+                      <input type="checkbox" class="custom-control-input"  id="comments_updated">
+                      <label class="custom-control-label" for="comments_updated"></label>
                     </div>
                   </div>
                 </div>
@@ -533,8 +533,8 @@ function DashStats(){
                   <div class="col-lg-6 text-white">Follow up email sent</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_oncall"> 
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch9">
-                      <label class="custom-control-label" for="customSwitch9"></label>
+                      <input type="checkbox" class="custom-control-input"  id="follow_up_email_sent">
+                      <label class="custom-control-label" for="follow_up_email_sent"></label>
                     </div>
                   </div>
                 </div>
@@ -542,8 +542,8 @@ function DashStats(){
                   <div class="col-lg-6 text-white">Informed GSR</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_case"> 
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch10">
-                      <label class="custom-control-label" for="customSwitch10"></label>
+                      <input type="checkbox" class="custom-control-input"  id="informed_GSR">
+                      <label class="custom-control-label" for="informed_GSR"></label>
                     </div>
                   </div>
                 </div>
@@ -551,8 +551,8 @@ function DashStats(){
                   <div class="col-lg-6 text-white">Mandatory fields updated</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_offcall"> 
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch11">
-                      <label class="custom-control-label" for="customSwitch11"></label>
+                      <input type="checkbox" class="custom-control-input"  id="mandatory_fields_updated">
+                      <label class="custom-control-label" for="mandatory_fields_updated"></label>
                     </div>
                   </div>
                 </div>
@@ -560,8 +560,8 @@ function DashStats(){
                   <div class="col-lg-6 text-white">Verified implementation (when applicable)</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_email"> 
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch12">
-                      <label class="custom-control-label" for="customSwitch12"></label>
+                      <input type="checkbox" class="custom-control-input"  id="verified_implementation">
+                      <label class="custom-control-label" for="verified_implementation"></label>
                     </div>
                   </div>
                 </div>
@@ -569,8 +569,8 @@ function DashStats(){
                   <div class="col-lg-6 text-white">Right CID worked on?</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_sharing"> 
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch13">
-                      <label class="custom-control-label" for="customSwitch13"></label>
+                      <input type="checkbox" class="custom-control-input"  id="right_cid_worked_on">
+                      <label class="custom-control-label" for="right_cid_worked_on"></label>
                     </div>
                   </div>
                 </div>
@@ -578,8 +578,8 @@ function DashStats(){
                   <div class="col-lg-6 text-white">All tasks added on the case, Special Instructions or on emails addressed</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_7days"> 
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch14">
-                      <label class="custom-control-label" for="customSwitch14"></label>
+                      <input type="checkbox" class="custom-control-input"  id="all_tasks_added_postcheck">
+                      <label class="custom-control-label" for="all_tasks_added_postcheck"></label>
                     </div>
                   </div>
                 </div>
@@ -587,8 +587,8 @@ function DashStats(){
                   <div class="col-lg-6 text-white">Correct Status / Sub-status updated</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_followup"> 
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customSwitch15">
-                      <label class="custom-control-label" for="customSwitch15"></label>
+                      <input type="checkbox" class="custom-control-input"  id="correct_status">
+                      <label class="custom-control-label" for="correct_status"></label>
                     </div>
                   </div>
                 </div>
@@ -1817,16 +1817,55 @@ window.addEventListener('load', function(){
               });
           })
 
+          var agentName = $('tr:contains("Case Owner"):eq(1) td:eq(1)').text().split('[')[0] || '';
+          var casenumber = $('tr:contains("Case Number"):last td:eq(1)').text();
+          var status = $('tr:contains("Status"):eq(3) td:eq(1)').text();
+          var multicheckdata = {
+            'agentName':agentName,
+            'caseid': casenumber, 
+            'status': status
+          }
+      
+          chrome.runtime.sendMessage({'request':'multicheck', 'data':multicheckdata}, function(response) {
+            if(response.status == 'true'){
+               
+            }
+          })
+
+
+      
+          $('.custom-control-input').click(function(){
+            var value = 0;
+             if( $(this).is(':checked') ){
+                value = 1;
+             } else {
+                value = 0;
+             }
+            var datatoUpdate = {
+              'caseid': casenumber,
+              'attribute': $(this).attr('id'),
+              'value': value
+            }
+             chrome.runtime.sendMessage({'request':'multicheck-update', 'data':datatoUpdate}, function(response) {
+                if(response.status == 'true'){
+                  console.log('updated')
+                }
+              })
+          })
+
         })
     }
 
-    var agentName = $('#userNavLabel').text().split('...')[0] || '';
+    
     //console.log(agentName);
     chrome.runtime.sendMessage({'request':'livestatus', 'data':agentName}, function(response) {
       if(response.status == 'true'){
          
       }
     })
+
+
+   
 
 })
 

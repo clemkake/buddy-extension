@@ -26,7 +26,7 @@ chrome.runtime.onInstalled.addListener(function(details){
       callhere();
   }else if(details.reason == "update"){
       var thisVersion = chrome.runtime.getManifest().version;
-      console.log("Updated from " + details.previousVersion + " to " + thisVersion + "!");
+      // console.log("Updated from " + details.previousVersion + " to " + thisVersion + "!");
       callhere();
   }
 });
@@ -34,9 +34,9 @@ chrome.runtime.onInstalled.addListener(function(details){
 // *://smbsalesimplementation.my.salesforce.com/*
 function callhere(){
   chrome.tabs.query({url: '*://smbsalesimplementation.my.salesforce.com/*'}, function(tabs){
-      console.log(tabs);
+      // console.log(tabs);
   tabs.forEach(function(element) {
-      console.log(element.id);
+      // console.log(element.id);
       chrome.tabs.reload(element.id)
   });
 })
@@ -99,9 +99,57 @@ chrome.runtime.onMessage.addListener(function(message, callback, sendResponse) {
         }
 
   }
-  return true;
 
 });
+
+chrome.runtime.onMessage.addListener(function(message, callback, sendResponse) {
+  if (message.request == "multicheck") {
+    console.log(message);
+    var gd = new FormData();    
+    gd.append( 'qtype', 'multicheck' );
+    gd.append( 'agentName', message.data.agentName );
+    gd.append( 'caseid', message.data.caseid );
+    gd.append( 'status', message.data.status );
+      $.ajax({
+        method: "POST",
+        url: "https://google-wfm.regalix.com/salesforcetool/fetchMessage.php",
+        data: gd,
+        enctype:'multipart/form-data',
+        processData: false,
+        contentType: false,
+      })
+    .done(function(data) {
+      console.log(data);
+      sendResponse(data);
+      // $('#login_btn_buddy').hide();
+    })
+  }
+
+  if (message.request == "multicheck-update") {
+      console.log('regarde');
+      var cd = new FormData();    
+      cd.append( 'qtype', 'multicheck-update' );
+      cd.append( 'caseid', message.data.caseid );
+      cd.append( 'attr', message.data.attribute );
+      cd.append( 'value', message.data.value );
+        $.ajax({
+          method: "POST",
+          url: "https://google-wfm.regalix.com/salesforcetool/fetchMessage.php",
+          data: cd,
+          enctype:'multipart/form-data',
+          processData: false,
+          contentType: false,
+        })
+      .done(function(data) {
+        console.log(data);
+        sendResponse(data);
+        // $('#login_btn_buddy').hide();
+      })
+
+
+  }
+  return true;
+})
 
 
 
