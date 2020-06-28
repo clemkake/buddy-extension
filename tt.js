@@ -426,6 +426,186 @@ function DashStats(){
       </div>
     </div>
   </div>
+
+
+  <div class="row dashboard-card">
+  <div class="col">
+    <div class="collapse" id="multicheck">
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home"></a></li>
+        <li><a data-toggle="tab" class="bg-primary text-white p-3" style="border-radius: 30px;" href="#menu1" >Precheck</a></li>
+        <li><a data-toggle="tab" class="bg-primary text-white p-3" style="border-radius: 30px;" href="#menu2">Postcheck</a></li>
+        <li class="active"><a data-toggle="tab" href="#last"></a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in ">
+         
+        </div>
+        
+        <div id="menu1" class="tab-pane fade active show">
+
+          <div class="card dashboard-card-content bg-secondary border-0" style="width: 38rem;">
+            <div class=" card-body">
+
+                <div class="row p-2 border-bottom">
+                  <div class="col-lg-6 text-white">Auth mail sent</div>
+                  <div class="col-lg-2 text-center mx-auto" id="timer_pre"> 
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                      <label class="custom-control-label" for="customSwitch1"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2 border-bottom">
+                  <div class="col-lg-6 text-white">Appointment Confirmed</div>
+                  <div class="col-lg-2 text-center mx-auto" id="timer_oncall"> 
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                      <label class="custom-control-label" for="customSwitch2"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2 border-bottom">
+                  <div class="col-lg-6 text-white">Correct phone number updated</div>
+                  <div class="col-lg-2 text-center mx-auto" id="timer_case"> 
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                      <label class="custom-control-label" for="customSwitch3"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2 border-bottom">
+                  <div class="col-lg-6 text-white">Hangout link sent</div>
+                  <div class="col-lg-2 text-center mx-auto" id="timer_offcall"> 
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                      <label class="custom-control-label" for="customSwitch4"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2 border-bottom">
+                  <div class="col-lg-6 text-white">Has googler asked to join</div>
+                  <div class="col-lg-2 text-center mx-auto" id="timer_email"> 
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch5">
+                      <label class="custom-control-label" for="customSwitch5"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2 border-bottom">
+                  <div class="col-lg-6 text-white">All tasks added on the case, Special Instructions or on emails addressed</div>
+                  <div class="col-lg-2 text-center mx-auto" id="timer_sharing"> 
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch6">
+                      <label class="custom-control-label" for="customSwitch6"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2 border-bottom">
+                  <div class="col-lg-6 text-white">Has agent joined & started the call?</div>
+                  <div class="col-lg-2 text-center mx-auto" id="timer_7days"> 
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch7">
+                      <label class="custom-control-label" for="customSwitch7"></label>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div id="menu2" class="tab-pane fade">
+          
+          <div class="card dashboard-card-content bg-secondary border-0" style="width: 38rem;">
+            <div class=" card-body">
+
+                <div class="row p-2 border-bottom">
+                  <div class="col-lg-6 text-white">Comments updated</div>
+                  <div class="col-lg-2 text-center mx-auto" id="timer_pre"> 
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch8">
+                      <label class="custom-control-label" for="customSwitch8"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2 border-bottom">
+                  <div class="col-lg-6 text-white">Follow up email sent</div>
+                  <div class="col-lg-2 text-center mx-auto" id="timer_oncall"> 
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch9">
+                      <label class="custom-control-label" for="customSwitch9"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2 border-bottom">
+                  <div class="col-lg-6 text-white">Informed GSR</div>
+                  <div class="col-lg-2 text-center mx-auto" id="timer_case"> 
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch10">
+                      <label class="custom-control-label" for="customSwitch10"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2 border-bottom">
+                  <div class="col-lg-6 text-white">Mandatory fields updated</div>
+                  <div class="col-lg-2 text-center mx-auto" id="timer_offcall"> 
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch11">
+                      <label class="custom-control-label" for="customSwitch11"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2 border-bottom">
+                  <div class="col-lg-6 text-white">Verified implementation (when applicable)</div>
+                  <div class="col-lg-2 text-center mx-auto" id="timer_email"> 
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch12">
+                      <label class="custom-control-label" for="customSwitch12"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2 border-bottom">
+                  <div class="col-lg-6 text-white">Right CID worked on?</div>
+                  <div class="col-lg-2 text-center mx-auto" id="timer_sharing"> 
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch13">
+                      <label class="custom-control-label" for="customSwitch13"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2 border-bottom">
+                  <div class="col-lg-6 text-white">All tasks added on the case, Special Instructions or on emails addressed</div>
+                  <div class="col-lg-2 text-center mx-auto" id="timer_7days"> 
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch14">
+                      <label class="custom-control-label" for="customSwitch14"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2 border-bottom">
+                  <div class="col-lg-6 text-white">Correct Status / Sub-status updated</div>
+                  <div class="col-lg-2 text-center mx-auto" id="timer_followup"> 
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch15">
+                      <label class="custom-control-label" for="customSwitch15"></label>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <div id="last" class="tab-pane fade">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
   `)
   }
 }
@@ -757,6 +937,8 @@ $('#saveCh').click(function(){
 })
 }
 
+
+
 function Questionnaire(){
   if (document.body.className.match(" detailPage ") && jQuery('div#00N3600000QISAd_ileinner').text() == "Regalix"){
     $('#btnpreview').click(function(ev){
@@ -791,36 +973,39 @@ function NewIconSet(){
   if (document.body.className.match(" detailPage ") && jQuery('div#00N3600000QISAd_ileinner').text() == "Regalix"){
 
    $('body').append(`<div class="icon-bar">
-   <a class="facebook precheck " id="precheck" data-toggle="collapse" href="#prechecks" role="button" aria-expanded="false" aria-controls="prechecks">
-      <i class="text-white fa fa-history" aria-hidden="true"></i>
-   </a> 
-   <a class="google escape" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
-      <i class="fa fa-angle-double-left"></i>
-   </a> 
-   <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="Send a Calendar invitation to the googler" id="calendar" class="facebook">
-      <i class="fa fa-calendar"></i>
-   </a> 
-   <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="Inactive Email" id="close" class="twitter">
-      <i class="fa fa-times"></i>
-   </a> 
-   <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="Confirmation Email" id="confirmation" class="google">
-      <i class="fa fa-check"></i>
-   </a> 
-   <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="Comments On case" id="comments" class="linkedin">
-      <i class="fa fa-comments-o"></i>
-   </a>
-   <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="Send an Email" id="emails" class="youtube">
-      <i class="fa fa-envelope"></i>
-   </a> 
-   <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="FAQ " id="faq" class="google">
-      <i class="fa fa-question-circle"></i>
-   </a> 
-   <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="Confirmation Email Template" id="all-confirmation" class="youtube">
-      <i class="fa fa-list-alt"></i>
-   </a> 
-   <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="Setting Expectations" id="settingex" class="special">
-      <i class="fa fa-tasks" aria-hidden="true"></i>
-   </a> 
+      <a class="google escape" data-toggle="collapse" href="#multicheck" role="button" aria-expanded="false" aria-controls="multicheck">
+          <i class="fa fa-adjust"></i>
+      </a> 
+      <a class="facebook precheck " id="precheck" data-toggle="collapse" href="#prechecks" role="button" aria-expanded="false" aria-controls="prechecks">
+          <i class="text-white fa fa-history" aria-hidden="true"></i>
+      </a> 
+      <a class="google escape" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+          <i class="fa fa-angle-double-left"></i>
+      </a> 
+      <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="Send a Calendar invitation to the googler" id="calendar" class="facebook">
+          <i class="fa fa-calendar"></i>
+      </a> 
+      <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="Inactive Email" id="close" class="twitter">
+          <i class="fa fa-times"></i>
+      </a> 
+      <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="Confirmation Email" id="confirmation" class="google">
+          <i class="fa fa-check"></i>
+      </a> 
+      <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="Comments On case" id="comments" class="linkedin">
+          <i class="fa fa-comments-o"></i>
+      </a>
+      <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="Send an Email" id="emails" class="youtube">
+          <i class="fa fa-envelope"></i>
+      </a> 
+      <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="FAQ " id="faq" class="google">
+          <i class="fa fa-question-circle"></i>
+      </a> 
+      <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="Confirmation Email Template" id="all-confirmation" class="youtube">
+          <i class="fa fa-list-alt"></i>
+      </a> 
+      <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover"  data-content="Setting Expectations" id="settingex" class="special">
+          <i class="fa fa-tasks" aria-hidden="true"></i>
+      </a> 
  </div>`)
 
   $('#calendar').click(function(){
