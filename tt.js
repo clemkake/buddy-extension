@@ -450,64 +450,134 @@ function DashStats(){
                 <div class="row p-2 border-bottom">
                   <div class="col-lg-6 text-white">Auth mail sent</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_pre"> 
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input"  id="auth_mail_sent">
-                      <label class="custom-control-label" for="auth_mail_sent"></label>
-                    </div>
+
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="auth_mail_sent" id="auth_mail_sent1" autocomplete="off" value="No" checked> No
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="auth_mail_sent" id="auth_mail_sent2" autocomplete="off" value="Yes"> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="auth_mail_sent" id="auth_mail_sent3" autocomplete="off" value="Error"> Error
+                    </label>
+                  </div>
+                   
+                    
                   </div>
                 </div>
                 <div class="row p-2 border-bottom">
                   <div class="col-lg-6 text-white">Appointment Confirmed</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_oncall"> 
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input"  id="appointment_confirmed">
-                      <label class="custom-control-label" for="appointment_confirmed"></label>
-                    </div>
+
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="appointment_confirmed" id="appointment_confirmed1" autocomplete="off" value="No" checked> No
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="appointment_confirmed" id="appointment_confirmed2" autocomplete="off" value="Yes"> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="appointment_confirmed" id="appointment_confirmed3" autocomplete="off" value="Error"> Error
+                    </label>
+                  </div>
+                   
+                    
                   </div>
                 </div>
                 <div class="row p-2 border-bottom">
                   <div class="col-lg-6 text-white">Correct phone number updated</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_case"> 
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input"  id="correct_phone_number">
-                      <label class="custom-control-label" for="correct_phone_number"></label>
-                    </div>
+
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="correct_phone_number" id="correct_phone_number1" autocomplete="off" value="No" checked> No
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="correct_phone_number" id="correct_phone_number2" autocomplete="off" value="Yes"> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="correct_phone_number" id="correct_phone_number3" autocomplete="off" value="Error"> Error
+                    </label>
+                  </div>
+                   
+                    
                   </div>
                 </div>
                 <div class="row p-2 border-bottom">
                   <div class="col-lg-6 text-white">Hangout link sent</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_offcall"> 
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input"  id="hangout_link">
-                      <label class="custom-control-label" for="hangout_link"></label>
-                    </div>
+
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="hangout_link" id="hangout_link1" autocomplete="off" value="No" checked> No
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="hangout_link" id="hangout_link2" autocomplete="off" value="Yes"> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="hangout_link" id="hangout_link3" autocomplete="off" value="Error"> Error
+                    </label>
+                  </div>
+                   
+                    
                   </div>
                 </div>
                 <div class="row p-2 border-bottom">
                   <div class="col-lg-6 text-white">Has googler asked to join</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_email"> 
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input"  id="has_googler_join">
-                      <label class="custom-control-label" for="has_googler_join"></label>
-                    </div>
+
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="has_googler_join" id="has_googler_join1" autocomplete="off" value="No" checked> No
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="has_googler_join" id="has_googler_join2" autocomplete="off" value="Yes"> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="has_googler_join" id="has_googler_join3" autocomplete="off" value="Error"> Error
+                    </label>
+                  </div>
+                   
+                    
                   </div>
                 </div>
                 <div class="row p-2 border-bottom">
                   <div class="col-lg-6 text-white">All tasks added on the case, Special Instructions or on emails addressed</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_sharing"> 
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input"  id="all_tasks_added_precheck">
-                      <label class="custom-control-label" for="all_tasks_added_precheck"></label>
-                    </div>
+
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="all_tasks_added_precheck" id="all_tasks_added_precheck1" autocomplete="off" value="No" checked> No
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="all_tasks_added_precheck" id="all_tasks_added_precheck2" autocomplete="off" value="Yes"> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="all_tasks_added_precheck" id="all_tasks_added_precheck3" autocomplete="off" value="Error"> Error
+                    </label>
+                  </div>
+                   
+                    
                   </div>
                 </div>
                 <div class="row p-2 border-bottom">
                   <div class="col-lg-6 text-white">Has agent joined & started the call?</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_7days"> 
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input"  id="has_agent_joined">
-                      <label class="custom-control-label" for="has_agent_joined"></label>
-                    </div>
+
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="has_agent_joined" id="has_agent_joined1" autocomplete="off" value="No" checked> No
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="has_agent_joined" id="has_agent_joined2" autocomplete="off" value="Yes"> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="has_agent_joined" id="has_agent_joined3" autocomplete="off" value="Error"> Error
+                    </label>
+                  </div>
+                   
+                    
                   </div>
                 </div>
 
@@ -523,73 +593,153 @@ function DashStats(){
                 <div class="row p-2 border-bottom">
                   <div class="col-lg-6 text-white">Comments updated</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_pre"> 
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input"  id="comments_updated">
-                      <label class="custom-control-label" for="comments_updated"></label>
-                    </div>
+
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="comments_updated" id="comments_updated1" autocomplete="off" value="No" checked> No
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="comments_updated" id="comments_updated2" autocomplete="off" value="Yes"> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="comments_updated" id="comments_updated3" autocomplete="off" value="Error"> Error
+                    </label>
+                  </div>
+                   
+                    
                   </div>
                 </div>
                 <div class="row p-2 border-bottom">
                   <div class="col-lg-6 text-white">Follow up email sent</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_oncall"> 
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input"  id="follow_up_email_sent">
-                      <label class="custom-control-label" for="follow_up_email_sent"></label>
-                    </div>
+
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="follow_up_email_sent" id="follow_up_email_sent1" autocomplete="off" value="No" checked> No
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="follow_up_email_sent" id="follow_up_email_sent2" autocomplete="off" value="Yes"> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="follow_up_email_sent" id="follow_up_email_sent3" autocomplete="off" value="Error"> Error
+                    </label>
+                  </div>
+                   
+                    
                   </div>
                 </div>
                 <div class="row p-2 border-bottom">
                   <div class="col-lg-6 text-white">Informed GSR</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_case"> 
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input"  id="informed_GSR">
-                      <label class="custom-control-label" for="informed_GSR"></label>
-                    </div>
+
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="informed_GSR" id="informed_GSR1" autocomplete="off" value="No" checked> No
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="informed_GSR" id="informed_GSR2" autocomplete="off" value="Yes"> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="informed_GSR" id="informed_GSR3" autocomplete="off" value="Error"> Error
+                    </label>
+                  </div>
+                   
+                    
                   </div>
                 </div>
                 <div class="row p-2 border-bottom">
                   <div class="col-lg-6 text-white">Mandatory fields updated</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_offcall"> 
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input"  id="mandatory_fields_updated">
-                      <label class="custom-control-label" for="mandatory_fields_updated"></label>
-                    </div>
+
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="mandatory_fields_updated" id="mandatory_fields_updated1" autocomplete="off" value="No" checked> No
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="mandatory_fields_updated" id="mandatory_fields_updated2" autocomplete="off" value="Yes"> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="mandatory_fields_updated" id="mandatory_fields_updated3" autocomplete="off" value="Error"> Error
+                    </label>
+                  </div>
+                   
+                    
                   </div>
                 </div>
                 <div class="row p-2 border-bottom">
                   <div class="col-lg-6 text-white">Verified implementation (when applicable)</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_email"> 
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input"  id="verified_implementation">
-                      <label class="custom-control-label" for="verified_implementation"></label>
-                    </div>
+
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="verified_implementation" id="verified_implementation1" autocomplete="off" value="No" checked> No
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="verified_implementation" id="verified_implementation2" autocomplete="off" value="Yes"> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="verified_implementation" id="verified_implementation3" autocomplete="off" value="Error"> Error
+                    </label>
+                  </div>
+                   
+                    
                   </div>
                 </div>
                 <div class="row p-2 border-bottom">
                   <div class="col-lg-6 text-white">Right CID worked on?</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_sharing"> 
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input"  id="right_cid_worked_on">
-                      <label class="custom-control-label" for="right_cid_worked_on"></label>
-                    </div>
+
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="right_cid_worked_on" id="right_cid_worked_on1" autocomplete="off" value="No" checked> No
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="right_cid_worked_on" id="right_cid_worked_on2" autocomplete="off" value="Yes"> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="right_cid_worked_on" id="right_cid_worked_on3" autocomplete="off" value="Error"> Error
+                    </label>
+                  </div>
+                   
+                    
                   </div>
                 </div>
                 <div class="row p-2 border-bottom">
                   <div class="col-lg-6 text-white">All tasks added on the case, Special Instructions or on emails addressed</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_7days"> 
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input"  id="all_tasks_added_postcheck">
-                      <label class="custom-control-label" for="all_tasks_added_postcheck"></label>
-                    </div>
+
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="all_tasks_added_postcheck" id="all_tasks_added_postcheck1" autocomplete="off" value="No" checked> No
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="all_tasks_added_postcheck" id="all_tasks_added_postcheck2" autocomplete="off" value="Yes"> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="all_tasks_added_postcheck" id="all_tasks_added_postcheck3" autocomplete="off" value="Error"> Error
+                    </label>
+                  </div>
+                   
+                    
                   </div>
                 </div>
                 <div class="row p-2 border-bottom">
                   <div class="col-lg-6 text-white">Correct Status / Sub-status updated</div>
                   <div class="col-lg-2 text-center mx-auto" id="timer_followup"> 
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input"  id="correct_status">
-                      <label class="custom-control-label" for="correct_status"></label>
-                    </div>
+
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="correct_status" id="correct_status1" autocomplete="off" value="No" checked> No
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="correct_status" id="correct_status2" autocomplete="off" value="Yes"> Yes
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="correct_status" id="correct_status3" autocomplete="off" value="Error"> Error
+                    </label>
+                  </div>
+                   
+                    
                   </div>
                 </div>
 
@@ -1817,7 +1967,7 @@ window.addEventListener('load', function(){
               });
           })
 
-          var agentName = $('tr:contains("Case Owner"):eq(1) td:eq(1)').text().split('[')[0] || '';
+          var agentName = $('#cas1_ileinner').text().split('[')[0] || '';
           var casenumber = $('tr:contains("Case Number"):last td:eq(1)').text();
           var status = $('tr:contains("Status"):eq(3) td:eq(1)').text();
           var multicheckdata = {
@@ -1834,16 +1984,14 @@ window.addEventListener('load', function(){
 
 
       
-          $('.custom-control-input').click(function(){
-            var value = 0;
-             if( $(this).is(':checked') ){
-                value = 1;
-             } else {
-                value = 0;
-             }
+          $('.btn-group-toggle input').click(function(){
+            var value = 'no';
+            
+              value = $(this).val();
+        
             var datatoUpdate = {
               'caseid': casenumber,
-              'attribute': $(this).attr('id'),
+              'attribute': $(this).attr('name'),
               'value': value
             }
              chrome.runtime.sendMessage({'request':'multicheck-update', 'data':datatoUpdate}, function(response) {
